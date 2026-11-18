@@ -1,0 +1,126 @@
+body * {font-family: cursive;}
+
+h1, h2, h3, h4, h5, h6 {
+ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ font-weight: bold;
+ font-size: 50px;
+}
+
+.sauga{ font-family: cursive;}
+
+p {
+    font-family: "Times", sans-serif;
+    font-style: italic;
+
+}
+
+.dydis1{
+    font-size: 20px;
+}
+
+.button {
+    color: darkgreen;
+}
+
+.tarpai1 {
+    margin-top:200px;
+    padding-top: 100px;
+}
+
+.border {
+  border-width: 100px;   
+  border-style: dashed;
+  border-color: blue; 
+}
+
+.test {
+    background-color: #e8e8e8;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.bar {
+    background-color: red;
+    border-radius: 10px;
+    height: 12px;
+}
+
+.t1{
+     background-color: lightblue;
+     box-shadow: 10px 10px 5px 12px lightgreen;
+     border-radius: 100px;
+}
+
+ol {
+    list-style: none;
+}
+
+ol {
+    counter-reset: num;
+}
+
+ol li {
+    counter-increment: num;
+}
+
+ol li::before {
+    content: counter(num, upper-roman) ". ";
+    color: blue;
+    
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+ul li::before {
+    color: blue;
+}
+
+
+ol ol {
+    counter-reset: poskyris;
+}
+
+ol ol {
+    counter-increment: poskyris;
+}
+
+ol ol ::before {
+    content: counter(poskyris, lower-alpha) ") ";
+    color: green;
+}
+
+.lin{
+    background-color: red;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: center;
+}
+
+table th {
+    background-color: darkgreen;
+    color: white;
+    font-weight: bold;
+    
+}
+
+
+table td {
+    
+    border: 1px solid black;
+}
+
+
+table tr:nth-child(even) {
+    background-color: #e8e8e8;
+}
+
+table tr:nth-child(odd) {
+    background-color: white;
+}
