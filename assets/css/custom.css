@@ -94,7 +94,7 @@ ol ol ::before {
 }
 
 .lin{
-    background-color: red;
+    background-color: #e8e8e8;
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -123,4 +123,184 @@ table tr:nth-child(even) {
 
 table tr:nth-child(odd) {
     background-color: white;
+}
+
+.trys_sekcijos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 5px;
+}
+
+
+.sekcijos_elute {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.planuojama {
+    background-color: #ffab67;
+}
+
+.mokomasi {
+    background-color: #ebf8c6;
+}
+
+.atlikta {
+    background-color: #d6e6f8;
+}
+
+
+.skill-card {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.skill-card h4 {
+    font-size: 17px;
+}
+
+.skill-card p {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.skill-card span {
+    font-weight: bold;
+    
+}
+
+.xp-korta {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+.xp-bendras {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.xp-info {
+    background-color: white;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.xp-progresas {
+    width: 100%;
+    height: 20px;
+    background-color: #d5d5d5;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.xp-progresas-fill {
+    width: 80%;
+    height: 20px;
+    background-color: darkgreen;
+    color: white;
+    text-align: center;
+}
+
+.statistika {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.statistikos_elementas {
+    background-color: #e8e8e8;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.statistikos_elementas h3 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.statistikos_elementas p {
+    font-size: 16px;
+    margin: 0;
+}
+
+#services {
+    background: linear-gradient(
+        120deg,
+        #d6e6f8,
+        #d6f8e5,
+        #f8e6d6,
+        #d6e6f8
+    );
+
+    background-size: 300% 300%;
+
+    animation: paslaugos-fonas 10s ease infinite;
+}
+
+@keyframes paslaugos-fonas {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.apie-figuros {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+
+.kvadratas {
+    width: 50px;
+    height: 50px;
+    background-color: darkgreen;
+
+    animation: sukimasis 4s linear infinite;
+}
+
+
+.trikampis {
+    width: 0;
+    height: 0;
+
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 55px solid #0563bb;
+
+    animation: sukimasis 4s linear infinite;
+}
+
+
+@keyframes sukimasis {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
 }
